@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Minimalista</title>
+    <title>Página Minimalista</title>
     <style>
         /* Reset de márgenes y padding */
         * {
@@ -12,11 +12,11 @@
             box-sizing: border-box;
         }
 
-        /* Fondo general y fuente */
+        /* Fondo general */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Gris muy claro */
-            color: #333; /* Gris oscuro para el texto */
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco por defecto */
+            font-family: 'Arial', sans-serif; /* Fuente limpia y sencilla */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,71 +24,39 @@
             margin: 0;
         }
 
-        /* Contenedor centralizado */
-        .container {
-            text-align: center;
-            background-color: white; /* Fondo blanco para el contenido */
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            width: 80%;
-            max-width: 600px;
-        }
-
-        /* Estilo del encabezado */
-        h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        /* Estilo del párrafo */
-        p {
-            font-size: 1.1rem;
-            color: #666; /* Gris más suave para el texto */
-            margin-bottom: 2rem;
+        /* Contenedor del título */
+        .title-container {
+            background-color: red; /* Rectángulo rojo */
+            color: white; /* Texto blanco */
+            padding: 20px 40px; /* Espaciado alrededor del texto */
+            border-radius: 15px; /* Bordes redondeados */
+            text-align: center; /* Centrar el texto */
+            font-size: 2rem; /* Tamaño del texto */
+            font-weight: bold; /* Negrita para el título */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
         }
 
         /* Estilo del enlace */
         a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #007BFF; /* Azul suave */
+            text-decoration: none; /* Quitar el subrayado */
+            color: white; /* El enlace es blanco */
         }
 
-        a:hover {
-            color: #0056b3; /* Azul más oscuro al pasar el ratón */
-        }
-
-        /* Estilo para el pie de página */
-        footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #999; /* Gris claro para el pie de página */
-        }
-
-        /* Estilo para el borde */
-        .border {
-            border-top: 1px solid #e0e0e0;
-            margin-top: 2rem;
-            padding-top: 1rem;
+        /* Efecto interactivo: cambio de escala y sombra */
+        .title-container:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Sombra roja */
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Bienvenido a Mi Página Web</h1>
-        <p>Este es un ejemplo de página web minimalista usando tonos blancos y grises. La simplicidad es clave para una experiencia agradable y fácil de navegar.</p>
-        <a href="#">Aprende más</a>
-
-        <div class="border"></div>
-
-        <footer>
-            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-        </footer>
-    </div>
+    <!-- Contenedor del título con enlace -->
+    <a href="https://www.ejemplo.com" target="_blank"> <!-- Redirige a otra página -->
+        <div class="title-container">
+            ¡Bienvenido a Mi Página Web!
+        </div>
+    </a>
 
 </body>
 </html>
-
