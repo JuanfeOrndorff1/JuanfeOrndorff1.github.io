@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mi Página Minimalista</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general y fuente */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Gris muy claro */
+            color: #333; /* Gris oscuro para el texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+        }
+
+        /* Contenedor centralizado */
+        .container {
+            text-align: center;
+            background-color: white; /* Fondo blanco para el contenido */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 80%;
+            max-width: 600px;
+        }
+
+        /* Estilo del encabezado */
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo del párrafo */
+        p {
+            font-size: 1.1rem;
+            color: #666; /* Gris más suave para el texto */
+            margin-bottom: 2rem;
+        }
+
+        /* Estilo del enlace */
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007BFF; /* Azul suave */
+        }
+
+        a:hover {
+            color: #0056b3; /* Azul más oscuro al pasar el ratón */
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #999; /* Gris claro para el pie de página */
+        }
+
+        /* Estilo para el borde */
+        .border {
+            border-top: 1px solid #e0e0e0;
+            margin-top: 2rem;
+            padding-top: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Bienvenido a mi página web en GitHub Pages!</h1>
-    <p>Esta es una página web simple alojada con GitHub Pages.</p>
+
+    <div class="container">
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Este es un ejemplo de página web minimalista usando tonos blancos y grises. La simplicidad es clave para una experiencia agradable y fácil de navegar.</p>
+        <a href="#">Aprende más</a>
+
+        <div class="border"></div>
+
+        <footer>
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
+
