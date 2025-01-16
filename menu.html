@@ -59,13 +59,20 @@
             transform: scale(1); /* Vuelve al tamaño original */
             box-shadow: none; /* Elimina la sombra al hacer clic */
         }
+
+        /* Estilo del enlace como un botón */
+        .link-button {
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block; /* Permite aplicar estilos de botón */
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Contenedor de los botones -->
     <div class="button-container">
-        <!-- 9 botones -->
+        <!-- Botones con enlaces -->
         <button class="button" onclick="window.location.href='https://www.ejemplo1.com'">Botón 1</button>
         <button class="button" onclick="window.location.href='https://www.ejemplo2.com'">Botón 2</button>
         <button class="button" onclick="window.location.href='https://www.ejemplo3.com'">Botón 3</button>
@@ -75,6 +82,11 @@
         <button class="button" onclick="window.location.href='https://www.ejemplo7.com'">Botón 7</button>
         <button class="button" onclick="window.location.href='https://www.ejemplo8.com'">Botón 8</button>
         <button class="button" onclick="window.location.href='https://www.ejemplo9.com'">Botón 9</button>
+
+        <!-- Hyperlien (enlace) como un botón -->
+        <a href="https://www.menusiteweb.com" class="link-button">
+            <button class="button">Ir a Ejemplo 10</button>
+        </a>
     </div>
 
 </body>
