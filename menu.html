@@ -3,33 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Bienvenida</title>
+    <title>Menu</title>
     <style>
-        body {
-            background-color: white; /* Fondo blanco */
-            display: flex;
-            justify-content: center; /* Centra el contenido horizontalmente */
-            align-items: center; /* Centra el contenido verticalmente */
-            height: 100vh; /* Hace que el cuerpo ocupe toda la altura de la ventana */
+        /* Reset de márgenes y padding */
+        * {
             margin: 0;
-            font-family: Arial, sans-serif; /* Fuente Arial */
+            padding: 0;
+            box-sizing: border-box;
         }
-        button {
-            background-color: #007BFF; /* Botón azul */
+
+        /* Fondo general */
+        body {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-wrap: wrap; /* Permite que los botones se alineen en varias filas */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+        }
+
+        /* Contenedor de los botones */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres botones por fila */
+            gap: 20px;
+            width: 80%;
+            max-width: 900px;
+            justify-items: center; /* Centra los botones en cada celda de la cuadrícula */
+        }
+
+        /* Estilos de los botones */
+        .button {
+            background-color: red; /* Fondo rojo */
             color: white; /* Texto blanco */
-            padding: 20px 40px; /* Relleno interno del botón */
-            border-radius: 25px; /* Bordes redondeados */
-            font-size: 24px; /* Tamaño del texto */
-            border: none; /* Sin borde */
-            cursor: pointer; /* El cursor cambia al pasar por encima */
-            transition: background-color 0.3s; /* Animación para el cambio de color */
+            padding: 15px 30px; /* Espaciado interno */
+            border: none; /* Quitar el borde predeterminado */
+            border-radius: 10px; /* Bordes redondeados */
+            font-size: 1.2rem; /* Tamaño de fuente */
+            text-align: center;
+            font-weight: bold; /* Texto en negrita */
+            cursor: pointer; /* Cambia el cursor a mano */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
         }
-        button:hover {
-            background-color: #0056b3; /* Cambia el color a un azul más oscuro al pasar el ratón */
+
+        /* Efecto al pasar el ratón sobre el botón */
+        .button:hover {
+            transform: scale(1.1); /* Aumenta el tamaño del botón */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Sombra roja */
         }
+
+        /* Efecto al hacer clic en el botón */
+        .button:active {
+            transform: scale(1); /* Vuelve al tamaño original */
+            box-shadow: none; /* Elimina la sombra al hacer clic */
+        }
+
+        /* Estilo del enlace como un botón */
+        .link-button {
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block; /* Permite aplicar estilos de botón */
+        }
+
     </style>
 </head>
 <body>
-    <button>Bienvenido</button>
+
+    <!-- Contenedor de los botones -->
+    <div class="button-container">
+        <!-- Botones con enlaces -->
+        <button class="button" onclick="window.location.href='https://juanfeorndorff1.github.io/internet'">L'internet</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo2.com'">Botón 2</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo3.com'">Botón 3</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo4.com'">Botón 4</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo5.com'">Botón 5</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo6.com'">Botón 6</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo7.com'">Botón 7</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo8.com'">Botón 8</button>
+        <button class="button" onclick="window.location.href='https://www.ejemplo9.com'">Botón 9</button>
+    </div>
+
 </body>
 </html>
