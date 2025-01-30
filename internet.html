@@ -3,50 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet</title>
+    <title>Historia de Internet</title>
     <style>
         body {
-            background-color: #87CEEB; /* Fondo azul cielo */
             font-family: Arial, sans-serif;
             margin: 0;
-            height: 100vh;
+            padding: 0;
+            text-align: center;
+            background-color: white;
         }
         h1 {
-            color: white; /* Título en blanco */
-            font-size: 80px; /* Título grande */
+            font-size: 68px;
             font-weight: bold;
+        }
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .timeline {
+            margin: 20px auto;
+            max-width: 800px;
             text-align: left;
-            margin: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para destacar las letras */
         }
-        h1 span {
-            padding: 10px;
-        }
-        button {
-            position: absolute;
-            right: 20px; /* Ubicado a la derecha */
-            bottom: 20px; /* Ubicado abajo */
-            background-color: red; /* Botón rojo */
-            color: white; /* Texto blanco */
-            padding: 15px 30px;
-            border-radius: 15px; /* Bordes redondeados */
+        .button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
             border: none;
-            font-size: 18px;
+            border-radius: 20px;
             cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: darkred; /* Cambio de color al pasar el ratón */
         }
     </style>
-    <script>
-        function redirigir() {
-            window.location.href = 'https://juanfeorndorff1.github.io/menu'; // Cambia la URL por la deseada
-        }
-    </script>
 </head>
 <body>
-    <h1><span>L'internet</span></h1>
-    <button onclick="redirigir()">Menu</button>
+    <h1>L'INTERNET</h1>
+    <div class="video-container">
+        <p>Aquí se mostrará un video sobre la historia de Internet.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="timeline">
+        <h2>Línea del Tiempo</h2>
+    </div>
+    <button class="button">Más información</button>
 </body>
 </html>
