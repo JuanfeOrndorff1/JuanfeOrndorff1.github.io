@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia de Internet</title>
     <style>
+        /* Estilos generales para la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,41 +13,72 @@
             text-align: center;
             background-color: white;
         }
+        
+        /* Título principal con tamaño grande */
         h1 {
             font-size: 68px;
             font-weight: bold;
         }
+        
+        /* Contenedor para el video con margen automático y ancho máximo */
         .video-container {
             margin: 20px auto;
             max-width: 800px;
         }
+        
+        /* Contenedor para la línea del tiempo */
         .timeline {
             margin: 20px auto;
             max-width: 800px;
-            text-align: left;
+            text-align: left; /* Alinear texto a la izquierda dentro del contenedor */
         }
+        
+        /* Botón azul en la esquina inferior derecha con bordes redondos */
         .button {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: blue;
+            background-color: red;
             color: white;
             padding: 10px 20px;
             border: none;
-            border-radius: 20px;
-            cursor: pointer;
+            border-radius: 20px; /* Hace que los bordes sean redondos */
+            cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        /* Efecto al pasar el mouse sobre el botón */
+        .button:hover {
+            transform: scale(1.1); /* Aumenta el tamaño del botón */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Sombra roja */
+        }
+        
+        /* Efecto al hacer clic en el botón */
+        .button:active {
+            transform: scale(1); /* Vuelve al tamaño original */
+            box-shadow: none; /* Elimina la sombra al hacer clic */
+            background-color: red; /* Cambia el color a rojo */
         }
     </style>
 </head>
 <body>
+    <!-- Título principal de la página -->
     <h1>L'INTERNET</h1>
+    
+    <!-- Contenedor para el video de la historia de Internet -->
     <div class="video-container">
         <p>Aquí se mostrará un video sobre la historia de Internet.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
     </div>
+    
+    <!-- Contenedor para la línea del tiempo -->
     <div class="timeline">
         <h2>Línea del Tiempo</h2>
     </div>
-    <button class="button">Más información</button>
+    
+    <!-- Botón fijo en la esquina inferior derecha con hyperlink -->
+    <a href="https://juanfeorndorff1.github.io/menu" class="button">Menu</a>
 </body>
 </html>
