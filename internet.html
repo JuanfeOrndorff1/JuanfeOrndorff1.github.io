@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoire de l'internet</title>
+    <title>Histoire de l'Internet</title>
     <style>
         /* Estilos generales para la página */
         body {
@@ -26,6 +26,7 @@
             justify-content: center;
             gap: 15px;
             margin-top: 20px;
+            flex-wrap: wrap; /* Permite que los botones se ajusten si la pantalla es pequeña */
         }
         
         /* Estilos de los botones rojos */
@@ -66,6 +67,7 @@
             transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
             text-decoration: none;
             display: inline-block;
+            font-size: 1.2rem;
         }
         
         /* Efecto al pasar el mouse sobre el botón fijo */
@@ -83,19 +85,19 @@
 </head>
 <body>
     <!-- Título principal de la página -->
-    <h1>Historia de Internet</h1>
+    <h1>Histoire de l'Internet</h1>
     
     <!-- Contenedor de los botones en fila -->
     <div class="button-container">
-        <button class="button-red">Histoire de L'internet</button>
+        <button class="button-red">Histoire de l'Internet</button>
         <button class="button-red">Protocole TCP/IP</button>
         <button class="button-red">DNS</button>
         <button class="button-red">Routage</button>
-        <button class="button-red">Reseau pair à pair</button>
-        <button class="button-red">Conversion decimal a binaire</button>
+        <button class="button-red">Réseau pair à pair</button>
+        <button class="button-red">Conversion décimal à binaire</button>
     </div>
 
     <!-- Botón fijo en la esquina inferior derecha con hyperlink -->
-    <a href="#" class="https://juanfeorndorff1.github.io/menu">Menu</a>
+    <a href="https://juanfeorndorff1.github.io/menu" class="button-fixed">Menu</a>
 </body>
 </html>
