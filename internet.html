@@ -52,14 +52,8 @@
             box-shadow: none;
         }
         
-        /* Contenedor para el video */
-        .video-container {
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        
-        /* Botón azul en la esquina inferior derecha */
-        .button-red {
+        /* Botón fijo en la esquina inferior derecha */
+        .button-fixed {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -74,23 +68,22 @@
             display: inline-block;
         }
         
-        /* Efecto al pasar el mouse sobre el botón azul */
-        .button-red:hover {
+        /* Efecto al pasar el mouse sobre el botón fijo */
+        .button-fixed:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
         }
         
-        /* Efecto al hacer clic en el botón azul */
-        .button-red:active {
+        /* Efecto al hacer clic en el botón fijo */
+        .button-fixed:active {
             transform: scale(1);
             box-shadow: none;
-            background-color: red;
         }
     </style>
 </head>
 <body>
     <!-- Título principal de la página -->
-    <h1>L'INTERNET</h1>
+    <h1>Historia de Internet</h1>
     
     <!-- Contenedor de los botones en fila -->
     <div class="button-container">
@@ -102,19 +95,8 @@
         <button class="button-red">Botón 6</button>
         <button class="button-red">Botón 7</button>
     </div>
-    
-    <!-- Contenedor para el video (eliminado el video y el texto) -->
-    <div class="video-container">
-        <!-- Aquí ya no hay video ni texto -->
-    </div>
-    
-    <!-- Contenedor para la línea del tiempo (eliminado el texto) -->
-    <div class="timeline">
-        <!-- Aquí ya no hay texto de la línea del tiempo -->
-    </div>
-    
+
     <!-- Botón fijo en la esquina inferior derecha con hyperlink -->
-    <a href="#" class="button-red">Menu</a>
+    <a href="#" class="button-fixed">Menú</a>
 </body>
 </html>
-
