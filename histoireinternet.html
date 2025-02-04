@@ -1,84 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoire d'Internet</title>
+    <title>L'Histoire d'Internet</title>
     <style>
-        /* Estilos generales para la página */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: black;
+            background-color: white;
+            color: black;
+            margin: 20px;
         }
-        
-        /* Título principal con tamaño grande */
         h1 {
-            font-size: 68px;
-            font-weight: bold;
+            color: black;
+            text-align: center;
+            font-size: 48px;
         }
-        
-        /* Contenedor para el video con margen automático y ancho máximo */
-        .video-container {
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        
-        /* Contenedor para la línea del tiempo */
-        .timeline {
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: left; /* Alinear texto a la izquierda dentro del contenedor */
-        }
-        
-        /* Botón azul en la esquina inferior derecha con bordes redondos */
-        .button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+        .epoch {
             background-color: red;
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px; /* Hace que los bordes sean redondos */
-            cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-            text-decoration: none;
-            display: inline-block;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-align: center;
         }
-        
-        /* Efecto al pasar el mouse sobre el botón */
-        .button:hover {
-            transform: scale(1.1); /* Aumenta el tamaño del botón */
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Sombra roja */
-        }
-        
-        /* Efecto al hacer clic en el botón */
-        .button:active {
-            transform: scale(1); /* Vuelve al tamaño original */
-            box-shadow: none; /* Elimina la sombra al hacer clic */
-            background-color: red; /* Cambia el color a rojo */
+        .contenu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-left: 6px solid red;
         }
     </style>
 </head>
 <body>
-    <!-- Título principal de la página -->
-    <h1>L'INTERNET</h1>
-    
-    <!-- Contenedor para el video de la historia de Internet -->
-    <div class="video-container">
-        <p>Un video de l'histoire d'Internet va se reproduire en bas de ce texte.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <h1>L'Histoire d'Internet</h1>
+    <div class="contenu">
+        <div class="epoch">Années 1950-1970 : Les débuts de l'Internet</div>
+        <p><strong>1958 :</strong> Création de l'ARPA (Advanced Research Projects Agency) aux États-Unis.</p>
+        <p><strong>1962 :</strong> Paul Baran propose un réseau décentralisé pour la communication militaire.</p>
+        <p><strong>1969 :</strong> Naissance d’ARPANET, le précurseur d’Internet. Première connexion entre quatre universités américaines.</p>
+
+        <div class="epoch">Années 1970-1980 : Premiers protocoles et réseaux</div>
+        <p><strong>1971 :</strong> Envoi du premier e-mail par Ray Tomlinson.</p>
+        <p><strong>1973 :</strong> Création du protocole TCP/IP par Vinton Cerf et Robert Kahn.</p>
+        <p><strong>1983 :</strong> Adoption officielle de TCP/IP par ARPANET, marquant le début d'Internet.</p>
+        <p><strong>1984 :</strong> Création du DNS (Domain Name System), facilitant l’accès aux sites Web.</p>
+
+        <div class="epoch">Années 1990 : L’essor du Web et d’Internet</div>
+        <p><strong>1990 :</strong> Tim Berners-Lee invente le World Wide Web (WWW).</p>
+        <p><strong>1991 :</strong> Ouverture du Web au public.</p>
+        <p><strong>1993 :</strong> Apparition de Mosaic, premier navigateur Web graphique.</p>
+        <p><strong>1994 :</strong> Naissance d’Amazon et Yahoo!.</p>
+        <p><strong>1998 :</strong> Création de Google.</p>
+
+        <div class="epoch">Années 2000 : L’Internet 2.0 et les réseaux sociaux</div>
+        <p><strong>2001 :</strong> Lancement de Wikipédia.</p>
+        <p><strong>2004 :</strong> Création de Facebook.</p>
+        <p><strong>2005 :</strong> Naissance de YouTube.</p>
+        <p><strong>2006 :</strong> Création de Twitter.</p>
+        <p><strong>2007 :</strong> Lancement de l’iPhone, qui popularise l’Internet mobile.</p>
+
+        <div class="epoch">Années 2010 à aujourd’hui : Cloud, IA et Web 3.0</div>
+        <p><strong>2010 :</strong> Explosion des services Cloud (AWS, Google Cloud, etc.).</p>
+        <p><strong>2012 :</strong> Lancement d’Instagram et de la 4G.</p>
+        <p><strong>2015 :</strong> Popularisation des objets connectés et de l’IA.</p>
+        <p><strong>2021 :</strong> Développement du métavers et du Web3.</p>
     </div>
-    
-    <!-- Contenedor para la línea del tiempo -->
-    <div class="timeline">
-        <h2>Línea del Tiempo</h2>
-    </div>
-    
-    <!-- Botón fijo en la esquina inferior derecha con hyperlink -->
-    <a href="https://juanfeorndorff1.github.io/menu" class="button">Menu</a>
 </body>
 </html>
+
