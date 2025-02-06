@@ -36,6 +36,25 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        .button-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+        .button-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
     </style>
 </head>
 <body>
@@ -44,34 +63,32 @@
     <div class="section">
         <div class="rectangular-title">Protocole IP (Internet Protocol)</div>
         <div class="content">
-            <p>Le protocole IP est l’un des protocoles clés d’Internet. Il a été conçu pour permettre l’adressage et l’acheminement des données entre différents appareils à travers un réseau. Il a été développé par Vint Cerf et Bob Kahn, deux chercheurs américains, dans le cadre de leurs travaux sur ARPANET, le précurseur d'Internet, en 1973 et a été normalisé en 1981. La version la plus courante aujourd’hui est IPv4.</p>
-            <p>L’objectif de la création d'IP était de permettre à différents réseaux de se connecter et de s'échanger des données. IP sert à définir les adresses uniques des appareils sur Internet, afin que les données puissent être envoyées au bon endroit.</p>
+            <p>Le protocole IP est l’un des protocoles clés d’Internet. Il a été conçu pour permettre l’adressage et l’acheminement des données entre différents appareils à travers un réseau...</p>
         </div>
     </div>
 
     <div class="section">
         <div class="rectangular-title">Versions importantes de IP</div>
         <div class="content">
-            <p><strong>IPv4 (Internet Protocol version 4) :</strong> C’est la version la plus utilisée d’IP, qui utilise des adresses de 32 bits (environ 4 milliards d'adresses uniques possibles).</p>
-            <p><strong>IPv6 (Internet Protocol version 6) :</strong> Cette version a été introduite pour résoudre la limitation du nombre d’adresses disponibles dans IPv4. IPv6 utilise des adresses de 128 bits, permettant un nombre pratiquement illimité d'adresses.</p>
+            <p><strong>IPv4 (Internet Protocol version 4) :</strong> C’est la version la plus utilisée d’IP...</p>
         </div>
     </div>
 
     <div class="section">
         <div class="rectangular-title">Protocole TCP (Transmission Control Protocol)</div>
         <div class="content">
-            <p>Le protocole TCP est responsable de la transmission fiable des données. Il veille à ce que les paquets de données arrivent dans le bon ordre, sans erreur et complètement. Il a été conçu par Vint Cerf et Bob Kahn en 1974, dans le cadre de la création d’un réseau fiable.</p>
-            <p>TCP a été créé pour résoudre le problème des erreurs de transmission de données, garantissant que les paquets envoyés arrivent correctement, dans le bon ordre et sans perte.</p>
+            <p>Le protocole TCP est responsable de la transmission fiable des données...</p>
         </div>
     </div>
 
     <div class="section">
         <div class="rectangular-title">Comment TCP et IP travaillent ensemble</div>
         <div class="content">
-            <p>IP est responsable de l’adressage : il attribue une adresse unique à chaque appareil et s’assure que les données parviennent à la bonne destination sur le réseau. IP se charge de l'acheminement des paquets de données entre les différentes adresses.</p>
-            <p>TCP se charge de la fiabilité : lorsqu'un message ou un fichier est envoyé, TCP divise ces données en plusieurs paquets et s’assure que chaque paquet arrive à destination, dans le bon ordre. Si un paquet est perdu, TCP le renverra.</p>
+            <p>IP est responsable de l’adressage...</p>
         </div>
     </div>
+
+    <a href="https://juanfeorndorff1.github.io/internet" class="button-fixed">Menu</a>
 </body>
 </html>
 
