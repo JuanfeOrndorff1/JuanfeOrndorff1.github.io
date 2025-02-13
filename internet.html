@@ -1,94 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoire de l'Internet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: white;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Histoire de l'Internet</title>
+	<style>
+    	body {
+        	font-family: Arial, sans-serif;
+        	margin: 0;
+        	padding: 0;
+        	text-align: center;
+        	background-color: white;
+    	}
+    	
+    	h1 {
+        	font-size: 68px;
+        	font-weight: bold;
+        	color: black;
+    	}
 
-        h1 {
-            font-size: 68px;
-            font-weight: bold;
-        }
+    	.button-container {
+        	display: flex;
+        	justify-content: center;
+        	gap: 15px;
+        	margin-top: 20px;
+        	flex-wrap: wrap;
+    	}
 
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
+    	.button-blue {
+        	background-color: red;
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 10px;
+        	font-size: 1.2rem;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s;
+    	}
 
-        .button-red {
-            background-color: red;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
+    	.button-blue:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    	}
 
-        .button-red:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-        }
+    	.button-blue:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
 
-        .button-red:active {
-            transform: scale(1);
-            box-shadow: none;
-        }
+    	.button-fixed {
+        	position: fixed;
+        	bottom: 20px;
+        	right: 20px;
+        	background-color: red;
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 20px;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s;
+        	text-decoration: none;
+        	display: inline-block;
+        	font-size: 1.2rem;
+    	}
 
-        .button-fixed {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: red;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.2rem;
-        }
+    	.button-fixed:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    	}
 
-        .button-fixed:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-        }
+    	.button-fixed:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
 
-        .button-fixed:active {
-            transform: scale(1);
-            box-shadow: none;
-        }
-    </style>
+    	.video-container {
+        	display: flex;
+        	justify-content: center;
+        	flex-wrap: wrap;
+        	gap: 20px;
+        	margin-top: 30px;
+    	}
+
+    	video {
+        	width: 300px;
+        	height: auto;
+        	border-radius: 10px;
+        	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    	}
+	</style>
 </head>
 <body>
-    <h1>Histoire de l'Internet</h1>
-
-    <div class="button-container">
-        <a href="https://juanfeorndorff1.github.io/histoireinternet" class="button-red">Histoire de l'Internet</a>
-        <a href="https://juanfeorndorff1.github.io/protocoletcpip" class="button-red">Protocole TCP/IP</a>
-        <a href="https://juanfeorndorff1.github.io/dns" class="button-red">DNS</a>
-        <a href="https://juanfeorndorff1.github.io/routage" class="button-red">Routage</a>
-        <a href="https://juanfeorndorff1.github.io/reseau" class="button-red">Réseau pair à pair</a>
-        <a href="https://juanfeorndorff1.github.io/conversion" class="button-red">Conversion décimal à binaire</a>
+	<h1>Histoire de l'Internet</h1>
+    
+	<div class="button-container">
+        <a href="https://juanfeorndorff1.github.io/histoireinternet" class="button-blue">Histoire de l'Internet</a>
+        <a href="https://juanfeorndorff1.github.io/protocoletcpip" class="button-blue">Protocole TCP/IP</a>
+        <a href="https://juanfeorndorff1.github.io/dns" class="button-blue">DNS</a>
+        <a href="https://juanfeorndorff1.github.io/routage" class="button-blue">Routage</a>
+        <a href="https://juanfeorndorff1.github.io/reseau" class="button-blue">Réseau pair à pair</a>
+        <a href="https://juanfeorndorff1.github.io/conversion" class="button-blue">Conversion décimal à binaire</a>
     </div>
 
-    <a href="https://juanfeorndorff1.github.io/menu" class="button-fixed">Menu</a>
+	<div class="video-container">
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video3.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video4.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video5.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video6.mp4" type="video/mp4">
+        </video>
+    </div>
+
+	<a href="https://juanfeorndorff1.github.io/menu" class="button-fixed">Menu</a>
 </body>
 </html>
-
