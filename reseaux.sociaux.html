@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video</title>
+    <style>
+        body {
+            background-color: white; /* Fondo blanco */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: black; /* Título en negro */
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+        }
+        .button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red; /* Botón rojo */
+            color: white; /* Texto blanco */
+            padding: 15px 25px;
+            border-radius: 30px; /* Bordes redondos */
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: box-shadow 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+        .button:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); /* Sombra roja en hover */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Página con Video</h1>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+    <a href="https://juanfeorndorff1.github.io/menu" class="button">Menu</a>
+</body>
+</html>
