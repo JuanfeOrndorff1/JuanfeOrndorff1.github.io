@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Videos</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: black;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        video {
+            width: 45%;
+            max-width: 450px;
+            border: 2px solid black;
+        }
+        .button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px; /* Tamaño reducido */
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: box-shadow 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+        .button:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Photographie Numerique</h1>
+    <div class="video-container">
+        <video controls>
+            <source src="Video.photo.samy.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <video controls>
+            <source src="Video.photo.jf.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+    <a href="https://juanfeorndorff1.github.io/menu" class="button">Menu</a>
+</body>
+</html>
